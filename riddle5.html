@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Rooftop Riddle</title>
+    <style>
+        /* High-contrast, architectural aesthetic */
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Concrete grey */
+            font-family: 'Courier New', Courier, monospace;
+            color: #1a1a1a;
+        }
+
+        /* The 'Foundation' container */
+        .container {
+            position: relative;
+            padding: 60px;
+            border: 4px solid #1a1a1a;
+            background-color: #ffffff;
+            box-shadow: 20px 20px 0px #d4d4d4; /* Heavy block shadow */
+            max-width: 600px;
+        }
+
+        /* Top 'Open' Indicator */
+        .container::before {
+            content: "OPEN TO SKY";
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background: #1a1a1a;
+            color: #fff;
+            padding: 2px 10px;
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+        }
+
+        p {
+            font-size: 1.4rem;
+            line-height: 1.4;
+            margin: 15px 0;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        /* The 'Glare' - Bright Yellow Highlight */
+        .highlight {
+            background-color: #ffef00;
+            padding: 0 5px;
+            display: inline-block;
+        }
+
+        /* Grounded Soles Line */
+        .bottom-line {
+            margin-top: 40px;
+            font-size: 1rem;
+            border-top: 1px solid #1a1a1a;
+            padding-top: 10px;
+            font-weight: 400;
+            text-transform: none;
+            font-style: italic;
+        }
+
+        /* Atmospheric decoration */
+        .coordinates {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 0.6rem;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p>I sit on the shoulders where foundations rest,</p>
+        <p>Where no heavy canopy over is pressed.</p>
+        <p>A hovering clearing, <span class="highlight">bathed in the glare,</span></p>
+        <p class="bottom-line">Where grounded soles walk through the uncaptured air.</p>
+        
+        <div class="coordinates">90° VERTICAL | ALT: CLEAR</div>
+    </div>
+
+</body>
+</html>
